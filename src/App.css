@@ -1,0 +1,230 @@
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #48c4ba;
+}
+
+.App-header {
+  text-align: center;
+  ;
+}
+
+.App-logo {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.App-button {
+  background-color: #af4c4c;
+  border: none;
+  color: rgb(255, 25, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.App-button:hover {
+  background-color: #8e3e3e;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+.App-header {
+  background-color: #000f2e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #47cbff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*card*/
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 550px;
+  background: rgba(48, 48, 48, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+button {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+ .MenuPage {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.MenuPage h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.MenuPage p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.MenuPage ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.MenuPage li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.MenuPage a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.MenuPage a:hover {
+  background-color: #5e0000;
+  color: #fff;
+}
+Header.sticky {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; 
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s;
+  fill: #666;
+}
+
+.container svg:hover {
+  transform: scale(1.1);
+}
+
+.container input:checked ~ svg {
+  fill: #E3474F;
+}
+

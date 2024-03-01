@@ -1,0 +1,24 @@
+
+
+
+  
+  .MenuPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-header {
+    margin-bottom: 2rem;
+  }
+  
+  .MenuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #aa1010;
+    border-radius: 4px;
+    width: 20rem;
+  }

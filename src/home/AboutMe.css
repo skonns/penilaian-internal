@@ -1,0 +1,24 @@
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the start of the cross axis */
+    padding: 20px;
+  }
+  
+  .title {
+    margin-top: 0;
+  }
+  
+  .brandContainer {
+    align-self: flex-start; /* Align this container to the start of the cross axis */
+    text-align: left; /* Align the text within this container to the left */
+  }
+  
+  .brandTitle {
+    margin-top: 0;
+  }
+  
+  .brandText {
+    text-align: left; /* Align the text to the left */
+  }
+  
